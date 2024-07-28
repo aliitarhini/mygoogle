@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Google Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div style="padding: 20px;">
-        <a href="https://mail.google.com">Gmail</a> |
-        <a href="https://www.google.com/imghp">Images</a> |
-        <a href="https://calendar.google.com/calendar/u/0/r">Google Calendar</a>
+    <div class="header">
+        <div class="header-left">
+            <a href="https://about.google">About</a>
+            <a href="https://store.google.com">Store</a>
+        </div>
+        <div class="header-right">
+            <a href="https://mail.google.com">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <a href="https://calendar.google.com">Calendar</a> <!-- Added Google Calendar Link -->
+            <div class="grid-icon">&#x22EE;</div>
+            <div class="profile-icon">A</div>
+        </div>
+    </div>
+    <div class="main">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+        <form action="https://www.google.com/search" method="GET" class="search-form">
+            <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL">
+            <div class="buttons">
+                <input type="submit" class="search-button" value="Google Search">
+                <input type="submit" class="search-button" value="I'm Feeling Lucky" name="btnI">
+            </div>
+        </form>
     </div>
 </body>
 </html>
