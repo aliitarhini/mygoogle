@@ -2,11 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #fff;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1920x1080/?nature,water') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -15,8 +34,7 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
+    position: relative;
 }
 
 .header-left a,
@@ -49,8 +67,7 @@ body {
 }
 
 .main {
-    text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .logo {
@@ -94,4 +111,32 @@ body {
 .search-button:hover {
     border: 1px solid #dadce0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.shortcuts {
+    margin-top: 40px;
+}
+
+.shortcuts h2 {
+    margin-bottom: 20px;
+}
+
+.shortcuts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shortcuts li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.shortcuts a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 18px;
+}
+
+.shortcuts a:hover {
+    text-decoration: underline;
 }
